@@ -71,6 +71,7 @@ std::vector<DeviceStatus> PollAllDevices() {
     PollMchose(ctx);
     PollRapoo(ctx);
     PollAreson(ctx);
+    PollSemitek(ctx);
     PollMchoseG3(ctx);
     PollMiscMice(ctx);
     PollFantech(ctx);

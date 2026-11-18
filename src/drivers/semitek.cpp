@@ -10,8 +10,9 @@
 // Protocol cross-checked against github.com/ksanjeev284/acer-popgo-companion (same firmware,
 // independently reverse engineered) and verified against three repeated reads on 1EA7:0064.
 // The dongle serves this status from a static cache: 565 polls across 2 h of active mouse use
-// returned byte-identical data, so a reading is the mouse's last measurement rather than a live
-// value; it only changes when the firmware re-measures (charging / power-cycle).
+// returned byte-identical data, and ~15 min of charging did not refresh it either, so a reading
+// is the mouse's last measurement rather than a live value; it only changes when the firmware
+// re-measures (power-cycle / re-pairing).
 #include "drivers.h"
 
 namespace {
